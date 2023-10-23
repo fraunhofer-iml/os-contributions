@@ -1,0 +1,18 @@
+default:
+  tags:
+    - asprunner
+  image: eclipse-temurin:17-jdk-focal
+
+pages:
+  stage: deploy
+  script:
+    - ./gradlew build
+    - mkdir -p public
+    - cp -Rv build/contributions/* public/
+    - echo "The site will be deployed to $CI_PAGES_URL"
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+  artifacts:
+    paths:
+      - public
+    expire_in: 1 day

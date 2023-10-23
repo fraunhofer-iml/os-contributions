@@ -1,0 +1,36 @@
+= Fraunhofer IML Open-Source Contributions
+:toc: macro
+
+// TIP: Always have the comprehensive http://asciidoctor.org/docs/asciidoc-syntax-quick-reference[QuickReference] handy.
+
+[abstract]
+====
+This is where https://www.iml.fraunhofer.de/[Fraunhofer IML] keeps a list of open-source projects maintained and contributed to.
+====
+
+toc::[]
+
+== Projects we maintain (in alphabetical order)
+
+====
+[discrete]
+== eCMR
+
+An implementation of electronic transport documents
+
+* Source code: https://git.openlogisticsfoundation.org/wg-electronictransportdocuments/ecmr
+====
+
+====
+[discrete]
+== openTCS
+
+A control system software for fleets of automated guided vehicles (AGVs) and mobile robots
+
+* Homepage: https://www.opentcs.org/
+* Source code: https://github.com/opentcs/
+====
+
+== Projects we contribute to (in alphabetical order)
+
+...

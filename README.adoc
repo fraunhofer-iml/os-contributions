@@ -1,0 +1,8 @@
+= Open Source Contributions by Fraunhofer IML
+
+Here, employees at link:https://www.iml.fraunhofer.de/[Fraunhofer IML] collect references to their contributions to open-source projects.
+The resulting rendered list of references can be seen at https://fraunhofer-iml.github.io/os-contributions/.
+
+If you work at Fraunhofer IML and would like to add a reference, please create a Merge Request / Pull Request that extends xref:src/docs/contributions/index.adoc[] accordingly.
+
+For questions and comments, please e-mail link:mailto:ospo@iml.fraunhofer.de[Fraunhofer IML's Open Source Programme Office].

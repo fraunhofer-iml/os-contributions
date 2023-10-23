@@ -1,0 +1,74 @@
+buildscript {
+  repositories {
+    mavenCentral()
+    maven {
+      url "https://plugins.gradle.org/m2/"
+    }
+    // Use the local Maven cache (e.g. for locally built snapshots).
+    mavenLocal()
+  }
+  dependencies {
+    // AsciiDoctor plugin(s)
+    classpath 'org.asciidoctor:asciidoctor-gradle-jvm:2.4.0'
+    classpath 'org.asciidoctor:asciidoctor-gradle-jvm-pdf:3.3.2'
+  }
+}
+
+repositories {
+  mavenCentral()
+  // Use the local Maven cache (e.g. for locally built snapshots).
+  mavenLocal()
+}
+
+apply plugin: 'base'
+apply plugin: 'org.asciidoctor.jvm.pdf'
+
+def docBuildDirContributions = file("$buildDir/contributions")
+
+task asciidoctor {
+  dependsOn 'asciidoctorContributions'
+  enabled = false
+}
+
+task asciidoctorContributions(type: org.asciidoctor.gradle.jvm.AsciidoctorTask) {
+  // Where to look for AsciiDoc files. Default: src/docs/asciidoc
+  sourceDir = file("src/docs/contributions")
+
+  baseDirFollowsSourceDir()
+
+  // Where to put the rendered documents. Default: $buildDir/asciidoc.
+  outputDir = docBuildDirContributions
+
+  sources {
+    include 'index.adoc'
+  }
+
+  outputOptions {
+    // Set the backends the processor should use: html5 (default), docbook, manpage, pdf, deckjs
+    backends = ['html5']
+    // Whether to put backends' outputs into separate subdirectories
+    separateOutputDirs = false
+  }
+
+  attributes 'encoding': 'utf-8',
+             'source-highlighter': 'coderay',
+             'coderay-linenums-mode': 'table',
+             'icons': 'font',
+             'webfonts': false,
+             'iconfont-remote': false,
+             'docinfo': "${file('src/docs/contributions/docinfo.html')}, shared"
+
+  resources {
+    from(sourceDir) {
+      include '_assets/**'
+    }
+  }
+
+  doLast {
+    delete "$docBuildDirContributions/.asciidoctor"
+  }
+}
+
+build {
+  dependsOn asciidoctor
+}
