@@ -42,4 +42,12 @@ A control system software for fleets of automated guided vehicles (AGVs) and mob
 
 == Projects we contribute to (in alphabetical order)
 
-...
+====
+[discrete]
+== IREE
+
+A retargetable MLIR-based machine learning compiler and runtime toolkit
+
+* Homepage: https://iree.dev/
+* Source code: https://github.com/openxla/iree
+====
