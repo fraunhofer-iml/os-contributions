@@ -21,6 +21,16 @@ An implementation of electronic transport documents
 
 ====
 [discrete]
+== EmitC
+
+Dialect to generate C/C++ from MLIR
+
+* Homepage: https://mlir.llvm.org/docs/Dialects/EmitC/
+* Source code: https://github.com/llvm/llvm-project/tree/main/mlir
+====
+
+====
+[discrete]
 == IREE
 
 A retargetable MLIR-based machine learning compiler and runtime toolkit
