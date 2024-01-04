@@ -8,9 +8,7 @@
 This is where https://www.iml.fraunhofer.de/[Fraunhofer IML] keeps a list of open-source projects maintained and contributed to.
 ====
 
-toc::[]
-
-== Projects we maintain (in alphabetical order)
+== Projects we maintain / contribute to (in alphabetical order)
 
 ====
 [discrete]
@@ -19,6 +17,16 @@ toc::[]
 An implementation of electronic transport documents
 
 * Source code: https://git.openlogisticsfoundation.org/wg-electronictransportdocuments/ecmr
+====
+
+====
+[discrete]
+== IREE
+
+A retargetable MLIR-based machine learning compiler and runtime toolkit
+
+* Homepage: https://iree.dev/
+* Source code: https://github.com/openxla/iree
 ====
 
 ====
@@ -38,16 +46,4 @@ A control system software for fleets of automated guided vehicles (AGVs) and mob
 
 * Homepage: https://www.opentcs.org/
 * Source code: https://github.com/opentcs/
-====
-
-== Projects we contribute to (in alphabetical order)
-
-====
-[discrete]
-== IREE
-
-A retargetable MLIR-based machine learning compiler and runtime toolkit
-
-* Homepage: https://iree.dev/
-* Source code: https://github.com/openxla/iree
 ====
