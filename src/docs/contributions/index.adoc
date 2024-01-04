@@ -23,6 +23,15 @@ An implementation of electronic transport documents
 
 ====
 [discrete]
+== MLIR-EmitC
+
+Scripts and compiler-based tools to translate Keras and TensorFlow models machine learning models to C++
+
+* Source code: https://github.com/iml130/mlir-emitc
+====
+
+====
+[discrete]
 == openTCS
 
 A control system software for fleets of automated guided vehicles (AGVs) and mobile robots
