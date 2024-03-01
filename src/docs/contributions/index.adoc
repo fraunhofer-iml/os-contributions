@@ -57,3 +57,130 @@ A control system software for fleets of automated guided vehicles (AGVs) and mob
 * Homepage: https://www.opentcs.org/
 * Source code: https://github.com/opentcs/
 ====
+
+====
+[discrete]
+== SERUM
+
+The **S**ilicon **E**conomy **Ru**st **M**odules are a collection of libraries and tools used for embedded development in Rust.
+The libraries aim to be `no_std` and `no_alloc` when possible so that they suitable for any bare-metal firmware development.
+
+* Source Code: https://git.openlogisticsfoundation.org/silicon-economy/libraries/serum
+
+[discrete]
+=== APDS9253
+
+Driver for the APDS9253 RGB, ambient and IR light sensor from Broadcom
+
+* Source Code: https://git.openlogisticsfoundation.org/silicon-economy/libraries/serum/apds9253
+* Crates.io: https://crates.io/crates/apds9253
+
+[discrete]
+=== Check SELE Licenses [archived]
+
+Simple executable to check the licenses of all dependencies in a cargo project or workspace
+
+* Source Code: https://git.openlogisticsfoundation.org/silicon-economy/libraries/serum/check-sele-licenses
+
+[discrete]
+=== CoAP-Zero
+
+Implementation of a CoAP endpoint
+
+* Source Code: https://git.openlogisticsfoundation.org/silicon-economy/libraries/serum/coap-zero
+* Crates.io: https://crates.io/crates/coap-zero
+
+[discrete]
+=== Embedded Timers
+
+Softwaretimers and -delays bases on a Clock implementation
+
+* Source Code: https://git.openlogisticsfoundation.org/silicon-economy/libraries/serum/embedded-timers
+* Crates.io: https://crates.io/crates/embedded-timers
+
+[discrete]
+=== ISSI IS31FL3731
+
+Driver for the audio modulated matrix LED driver IS31FL3731 by Integrated Silicon Solution Inc. (ISSI)
+
+* Source Code: https://git.openlogisticsfoundation.org/silicon-economy/libraries/serum/issi-is31fl3731
+* Crates.io: https://crates.io/crates/issi-is31fl3731
+
+[discrete]
+=== LSM6DSOX
+
+Platform-agnostic `embedded-hal` driver for the STMicroelectronics LSM6DSOX iNEMO inertial module
+
+* Source Code: https://git.openlogisticsfoundation.org/silicon-economy/libraries/serum/lsm6dsox
+* Crates.io: https://crates.io/crates/lsm6dsox
+
+[discrete]
+=== Memcom
+
+Command line tool for interacting with the shared memory between the M4 and A7 processors of the ST32MP1XX controllers
+
+* Source Code: https://git.openlogisticsfoundation.org/silicon-economy/libraries/serum/memcom-rs
+* Crates.io: https://crates.io/crates/memcom
+
+[discrete]
+=== Quectel BG77
+
+Driver for the Quectel BG77 and BG770 eMTC and NB-IoT modems using the `embedded-hal` traits
+for the underlying hardware abstractions and implementing the `embedded-nal` traits for users of this library
+
+* Source Code: https://git.openlogisticsfoundation.org/silicon-economy/libraries/serum/quectel-bg77
+* Crates.io: https://crates.io/crates/quectel-bg77
+
+[discrete]
+=== SenML DeSer
+
+Sensor Measurement Lists (SenML) implementation
+
+* Source Code: https://git.openlogisticsfoundation.org/silicon-economy/libraries/serum/senml-deser
+* Crates.io: https://crates.io/crates/senml-deser
+
+[discrete]
+=== Sensirion RHT
+
+Driver for multiple temperature and relative humidity sensors from Sensirion
+
+* Source Code: https://git.openlogisticsfoundation.org/silicon-economy/libraries/serum/sensirion-rht
+* Crates.io: https://crates.io/crates/sensirion-rht
+
+[discrete]
+=== SERUM Tool Configs
+
+Several config files for different tools that are used during development and/or in our CI/CD pipelines
+
+* Source Code: https://git.openlogisticsfoundation.org/silicon-economy/libraries/serum/serum-tool-configs
+
+[discrete]
+=== SERUM Nix Overlay
+
+Nix overlay with additional tools for embedded Rust development
+
+* Source Code: https://git.openlogisticsfoundation.org/silicon-economy/libraries/serum/serum-nix-overlay
+
+[discrete]
+=== Shared Mem Queue
+
+A simple single-writer single-reader queue which may be used for inter-processor-communication over a shared memory region
+
+* Source Code: https://git.openlogisticsfoundation.org/silicon-economy/libraries/serum/shared-mem-queue
+* Crates.io: https://crates.io/crates/shared-mem-queue
+
+[discrete]
+=== Try Ascii
+
+Helper to format byte slices that probably/mostly contain ASCII-encoded text
+
+* Source Code: https://git.openlogisticsfoundation.org/silicon-economy/libraries/serum/try-ascii
+* Crates.io: https://crates.io/crates/try-ascii
+
+[discrete]
+=== Winbond SpiFlash
+
+Platform-specific STM32 microcontroller with QSPI support driver for the Serial NOR Flash W25Q256JV
+
+* Source Code: https://git.openlogisticsfoundation.org/silicon-economy/libraries/serum/winbond-spiflash
+====
