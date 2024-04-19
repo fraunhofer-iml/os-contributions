@@ -99,6 +99,22 @@ Softwaretimers and -delays bases on a Clock implementation
 * Crates.io: https://crates.io/crates/embedded-timers
 
 [discrete]
+=== Git Semver [archived]
+
+Tool to extract SemVer Version Information from annotated git tags
+
+* Source Code: https://git.openlogisticsfoundation.org/silicon-economy/libraries/serum/git-semver
+
+[discrete]
+=== Git Tags Semver
+
+Tool to extract SemVer Version Information from annotated git tags
+
+* Source Code: https://git.openlogisticsfoundation.org/silicon-economy/libraries/serum/git-tags-semver
+* Crates.io: https://crates.io/crates/git-tags-semver
+
+
+[discrete]
 === ISSI IS31FL3731
 
 Driver for the audio modulated matrix LED driver IS31FL3731 by Integrated Silicon Solution Inc. (ISSI)
