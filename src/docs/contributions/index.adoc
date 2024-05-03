@@ -41,6 +41,15 @@ A retargetable MLIR-based machine learning compiler and runtime toolkit
 
 ====
 [discrete]
+== IREE Bare-Metal Arm Sample
+
+Example for running IREE in a bare-metal Arm environment
+
+* Source code: https://github.com/iml130/iree-bare-metal-arm
+====
+
+====
+[discrete]
 == MLIR-EmitC
 
 Scripts and compiler-based tools to translate Keras and TensorFlow models machine learning models to C++
